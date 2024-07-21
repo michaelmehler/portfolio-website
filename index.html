@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Mehler's Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0a4f8310c8.js" crossorigin="anonymous"></script> <!-- Website where icons came from -->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="extraFiles/logoSmall.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home </a></li>
+                    <li><a href="#about"> About </a></li>
+                    <li><a href="#services"> Services </a></li>
+                    <li><a href="#portfolio"> Portfolio </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i> 
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class = "header-text"> 
+                <p>Computer Science Student At William & Mary</p>
+                <h1>Hi, I'm <span>Michael</span> Mehler</h1> 
+            </div>
+        </div>
+    </div>
+<!-- About me Section --> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="extraFiles/headshot.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><br></p>
+                <p>Insert an about me</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Skill1</span><br>Description</li>
+                        <li><span>Skill2</span><br>Description</li>
+                        <li><span>Skill3</span><br>Description</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Experience1</span><br>Description</li>
+                        <li><span>Experience2</span><br>Description</li>
+                        <li><span>Experience3</span><br>Description</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Education1</span><br>Description</li>
+                        <li><span>Education2</span><br>Description</li>
+                        <li><span>Education3</span><br>Description</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------- Services -------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-shrimp"></i> 
+                <h2>Service 1</h2>
+                <p class="description">Description of Service</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hippo"></i>
+                <h2>Service 2</h2>
+                <p class="description">Description of Service</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-otter"></i>
+                <h2>Service 3</h2>
+                <p class="description">Description of Service</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------- Portfolio -------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="extraFiles/monkey.png">
+                <div class="layer">
+                    <h3>Project 1</h3>
+                    <p><br></p>
+                    <p class="description">Description</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="extraFiles/bearOne.png">
+                <div class="layer">
+                    <h3>Project 2</h3>
+                    <p><br></p>
+                    <p class="description">Description</p> 
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="extraFiles/monke2.png">
+                <div class="layer">
+                    <h3>Project 3</h3>
+                    <p><br></p>
+                    <p class="description">Description</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> 
+        </div>
+        <a href="#" class="button">See more</a>
+    </div>
+</div>
+<!------- Contact Me -------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> michaelmehler219@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/michael.mehler.355/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/michaelhmehler/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/michaelhmehler/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/michaelmehler"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="extraFiles/michaelMehlerResume.pdf" download class="button btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button btn2">Submit</button>
+                </form>
+                <span id="message"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="copyright-color">Copyright &copy Michael Mehler</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){  
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        } 
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab"); 
+        }
+        event.currentTarget.classList.add("active-link"); 
+        document.getElementById(tabname).classList.add("active-tab"); 
+    } 
+</script>
+
+<script> 
+var sideMenu = document.getElementById("sidemenu");
+
+function openMenu(){
+    sideMenu.style.right = "0";
+}
+
+function closeMenu(){
+    sideMenu.style.right = "-200px";
+}
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbygU30YVO0S8C9w6pqpTYcxEd8wt89taVKOfVCoj-2_6wvnMTHmsxnPVR7YCYwClWt-EA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const message = document.getElementById("message");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            message.innerHTML = "Message sent sucessfully!";
+            setTimeout(function(){message.innerHTML = "";}, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html> 
