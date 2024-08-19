@@ -17,7 +17,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(extraFiles/bears.png);
+    background-image: url(extraFiles/background.png);
     background-size: cover;
     background-position: center; 
 }
@@ -34,7 +34,7 @@ nav{
 } 
 
 .logo{
-    width: 140 px;
+    width: 350px;
 }
 
 nav ul li{
@@ -157,8 +157,8 @@ nav ul li a:hover::after{
     display: block; 
 }
 
-/* --------- Services -------- */
-#services{
+/* --------- Portfolio -------- */
+#portfolio{
     padding: 30px 0;
 }
 
@@ -170,6 +170,11 @@ nav ul li a:hover::after{
 } 
 
 .description{
+    color: #ababab;
+}
+
+.arrow-icon{
+    font:20;
     color: #ababab;
 }
 
@@ -206,7 +211,7 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-/* --------- Portfolio -------- */
+/* --------- Services -------- */
 #portfolio{
     padding: 50px 0;
 }
@@ -381,7 +386,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(extraFiles/bearsPhoneBackground.png);
+        background-image: url(extraFiles/background-phone.png);
     }
     .header-text{
         margin-top: 100%;
